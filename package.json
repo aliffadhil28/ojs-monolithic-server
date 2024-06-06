@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --host=0.0.0.0",
+    "pm2": "pm2 start index.js -i max --watch --ignore-watch='node_modules'",
+    "dev": "nodemon index.js"
+  },
+  "author": "alif",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "bcrypt": "^5.1.1",
+    "cookie-session": "^2.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "javascript-code-runner": "^1.0.9",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.0",
+    "mysql2": "^3.8.0",
+    "nodemon": "^3.0.3",
+    "pm2": "^5.3.1",
+    "python-shell": "^5.0.0",
+    "sequelize": "^6.35.2",
+    "sqlite3": "^5.1.7",
+    "validator": "^13.12.0"
+  }
+}
